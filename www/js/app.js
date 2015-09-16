@@ -67,6 +67,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'JamCtrl'
       }
     }
+  })
+  .state('app.findThings', {
+    url: '/findthings',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/findthings.html',
+        controller: 'FindThingsCtrl'
+      }
+    }
+  })
+  .state('app.thing', {
+    url: '/findthings/:thingId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/foundthing.html',
+        controller: 'FoundThingCtrl'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/jams');

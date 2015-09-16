@@ -1,0 +1,9 @@
+<ion-view view-title="Find Things">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="thing in things" href="#/app/findthings/{{thing.id}}">
+        {{thing.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

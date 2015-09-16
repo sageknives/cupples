@@ -53,4 +53,16 @@ angular.module('starter.controllers', [])
 })
 
 .controller('JamCtrl', function($scope, $stateParams) {
+})
+.controller('FindThingsCtrl', function($scope, $stateParams) {
+  var vm = this;
+  $scope.things = [
+    { title: '2 bed', id: 1 },
+    { title: '1 bed', id: 2 },
+    { title: '1 bed plus den', id: 3 },
+    { title: '1 bed + walkin closet', id: 4 }
+  ];
+})
+.controller('FoundThingCtrl', function($scope, $stateParams) {
+  
 });
