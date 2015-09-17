@@ -1,5 +1,10 @@
 <ion-view title="Welcome to Cupples" ng-controller="HomeCtrl as vm">
   <ion-content class="has-header padding">
-    <div class="allow-bullets">fun</div>
+    <div class="list">
+        <a class="item item-icon-right" ng-repeat="craigsItem in vm.craigslist" ng-click="vm.selectItem(craigsItem.id)">
+            {{craigsItem.name}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </a>
+    </div>
   </ion-content>
 </ion-view>

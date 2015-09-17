@@ -13,6 +13,7 @@ angular.module("cupplesApp", ["ionic", "angular-cache"])
     }
 
     CacheFactory("finderCache", { storageMode: "localStorage" });
+    CacheFactory("staticCache", { storageMode: "localStorage" });
   });
 })
 
