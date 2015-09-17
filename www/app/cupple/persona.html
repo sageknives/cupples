@@ -1,0 +1,10 @@
+<ion-view ng-controller="PersonACtrl as vm">
+  <ion-content class="has-header">
+    <div class="list">
+        <a class="item item-icon-right" ng-repeat="jam in vm.jams" ng-click="vm.selectJam(jam.id)">
+            {{jam.title}}
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </a>
+    </div>
+  </ion-content>
+</ion-view>
